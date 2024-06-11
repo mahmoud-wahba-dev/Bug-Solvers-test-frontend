@@ -1,0 +1,16 @@
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// base
+@import "./base/base";
+
+// components
+// @import "./components/otp";
+// layout
+
+@import "./layout/navbar";
+@import "./layout/footer";
+
+// pages
+@import "./pages/index";

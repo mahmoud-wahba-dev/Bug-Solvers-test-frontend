@@ -1,0 +1,28 @@
+.otp_page {
+  .flex_center {
+    margin-bottom: 142px;
+  }
+
+  .otp_container {
+    margin-bottom: 32px;
+    @include responsive(max, 425px) {
+      width: 100%;
+    }
+  }
+
+  .btn_resend_container {
+    text-align: center;
+
+    .btn_resend {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 23.5px;
+      color: $color_primary;
+      border: none;
+      background-color: transparent;
+    }
+  }
+  .input-group {
+    justify-content: center;
+  }
+}

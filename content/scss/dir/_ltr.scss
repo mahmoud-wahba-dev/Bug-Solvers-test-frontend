@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+$mainFont: "Heebo", sans-serif;
+
+$s: left;
+$e: right;
+
+$n: -1;
+$p: 1;
+
+body {
+  direction: ltr;
+  font-family: $mainFont;
+}

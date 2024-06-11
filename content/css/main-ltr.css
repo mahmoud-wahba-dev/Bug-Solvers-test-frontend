@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+body {
+  direction: ltr;
+  font-family: "Heebo", sans-serif; }
+
+/* mixin for responsive it takes 
+    type : min or max 
+    size : 100px for the width of target screen
+*/
+p,
+h5 {
+  margin-bottom: 0; }
+
+hr {
+  margin: 0; }
+
+/*# sourceMappingURL=main-ltr.css.map */
