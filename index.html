@@ -14,37 +14,208 @@
     />
     <!-- Global main css file for ltr  -->
     <!-- <link rel="stylesheet" href="./content/css/main.css" /> -->
-    <link rel="stylesheet" href="./content/css/main-ltr.css">
+    <link rel="stylesheet" href="./content/css/main-ltr.css" />
   </head>
 
   <body>
     <!-- start navabr -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img
+            src="./assets/images/navbar/Bug-solvers-logo.svg"
+            alt="Bug-solvers-logo.svg"
+          />
+        </a>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control search_input"
+            type="search"
+            placeholder="Want to learn?"
+            aria-label="Search"
+          />
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
 
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown ">
+              <a
+                class="nav-link dropdown-toggle mr-0"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/navbar/lang_icon.svg"
+                  alt="lang_icon.svg"
+                />
+                English <img src="" alt="" />
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <!-- start header section -->
 
     <main>
-      <section class="home_page">
+      <section class="home_page_hero_sec">
         <div class="container">
           <div class="row">
             <div class="col-md-5">
               <div class="hero_sec_container">
-                <h5>Welcome To Bug Solvers</h5>
-                <h1>From beginner to professionl</h1>
-                <p>
+                <h5 class="hero_welcome">Welcome To Bug Solvers</h5>
+                <h1 class="hero_title">From beginner to professionl</h1>
+                <p class="hero_subtitle">
                   Start learning the fields of the future with the
                   professionals, and here is your path to professionalism
                 </p>
-                <div class="icon_container">
-                  <a href="">Get Started</a>
-                  <button>Watch Video
-                    <img src="" alt="">
+                <div class="btns_container">
+                  <a class="btn_get_started" href="">Get Started</a>
+                  <button class="btn_watch_video">
+                    Watch Video
+                    <img
+                      class="play_icon"
+                      src="./assets/images/home/play_icon.svg"
+                      alt="play_icon.svg"
+                    />
                   </button>
                 </div>
               </div>
             </div>
             <div class="col-md-7">
               <div class="robot_container">
+                <!-- <img src="./assets/images/home/robot_img.svg" alt="robot_img.svg"> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section class="who_r_bug">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h6 class="title">Who are Bug Solvers</h6>
+              <h2 class="heading">
+                Our Team with High Technical Skills Help You Learn a
+                <span class="color_primary_profession">
+                  New Profession
+                  <img
+                    class="line_under_word"
+                    src="./assets/images/home/line.svg"
+                    alt="line.svg"
+                  />
+                </span>
+              </h2>
+
+              <p class="subtitle">
+                Our team of expert instructors combines exceptional technical
+                skills with a passion for teaching to help you master a new
+                profession. With hands-on learning and personalized support, our
+                courses provide the practical experience and knowledge needed to
+                excel, whether you're advancing your career or starting a new
+                path.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card_container">
+                    <div class="icon_container">
+                      <img
+                        src="./assets/images/home/student_beginner.svg"
+                        alt="student_beginner.svg"
+                      />
+                      <h5 class="card_title">For Beginners Students</h5>
+                    </div>
+                    <p class="card_subtitle">
+                      Adipiscing bibendum est ultricies integer. Magnis dis
+                      parturient montes nascetur ridiculus mus mauris
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card_container">
+                    <div class="icon_container">
+                      <img
+                        src="./assets/images/home/certification.svg"
+                        alt="certification.svg"
+                      />
+                      <h5 class="card_title">
+                        Recognition
+                        <span class="color_primary">&</span> Certification
+                      </h5>
+                    </div>
+                    <p class="card_subtitle">
+                      Adipiscing bibendum est ultricies integer. Magnis dis
+                      parturient montes nascetur ridiculus mus mauris
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card_container">
+                    <div class="icon_container">
+                      <img
+                        src="./assets/images/home/student_beginner.svg"
+                        alt="student_beginner.svg"
+                      />
+                      <h5 class="card_title">Expert Instruction</h5>
+                    </div>
+                    <p class="card_subtitle">
+                      Lectus magna fringilla urna porttitor rhoncus dolor purus
+                      non. Orci dapibus ultrices in iaculis
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="card_container">
+                    <div class="icon_container">
+                      <img
+                        src="./assets/images/home/interactive.svg"
+                        alt="student_beginner.svg"
+                      />
+                      <h5 class="card_title">
+                        Interactive Learning Environment
+                      </h5>
+                    </div>
+                    <p class="card_subtitle">
+                      Facilisi nullam vehicula ipsum a arcu cursus vitae.
+                      Interdum velit laoreet id donec ultrices tincidunt arcu
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

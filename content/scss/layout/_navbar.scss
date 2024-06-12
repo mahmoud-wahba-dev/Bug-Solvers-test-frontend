@@ -1,3 +1,36 @@
 .navbar {
-  
+  height: 125px;
+  border: 1px solid red;
+  padding: 0;
+  .navbar-brand {
+    margin-right: 153px;
+  }
+  .search_input {
+    width: 367px;
+    height: 44px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    background-color: $color_white;
+    border: 1px solid #d0d5dd;
+    box-shadow: 0px 1px 2px 0px #1018280d;
+    margin-right: 30px;
+    ::placeholder {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: #667085;
+    }
+  }
+  .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: $color_black_1;
+    padding: 0;
+    margin-right: 20px;
+    &.active,
+    &:hover {
+      color: $color_primary;
+    }
+  }
 }
