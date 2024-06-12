@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAAQ,wFAAgF;AAUxF,IAAK;EACH,SAAS,EAAE,GAAG;EACd,WAAW,EAVF,mBAAmB;;ACF9B;;;EAGE;ACHF;EACG;EACD,aAAa,EAAE,CAAC;;AAGlB,EAAG;EACD,MAAM,EAAE,CAAC",
-"sources": ["../scss/dir/_ltr.scss","../scss/abstracts/_mixins.scss","../scss/base/_base.scss"],
+"sources": ["../dir/_ltr.scss","../abstracts/_mixins.scss","../base/_base.scss"],
 "names": [],
 "file": "main-ltr.css"
 }

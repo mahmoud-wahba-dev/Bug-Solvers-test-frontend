@@ -1,0 +1,16 @@
+.contact-hero {
+    padding: 80px 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 20px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    &__content {
+        width: 40%;
+        color: white;
+    }
+}
