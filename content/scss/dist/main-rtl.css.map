@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAQ,wFAAgF;AAAhF,wFAAgF;AASxF,IAAK;EACH,SAAS,EAAE,GAAG;EACd,WAAW,EATF,mBAAmB;;AAO9B,IAAK;EACH,SAAS,EAAE,GAAG;EACd,WAAW,EATF,mBAAmB",
+"sources": ["../dir/_rtl.scss"],
+"names": [],
+"file": "main-rtl.css"
+}
