@@ -1,12 +1,17 @@
 .navbar {
   height: 125px;
-  border: 1px solid red;
   padding: 0;
   .navbar-brand {
     margin-right: 153px;
+    @include responsive(max, 1400px) {
+      margin-right: 100px;
+    }
+    @include responsive(max, 1200px) {
+      margin-right: 50px;
+    }
   }
   .search_input {
-    width: 367px;
+    flex-basis: 367px;
     height: 44px;
     padding: 10px 14px;
     border-radius: 8px;
@@ -21,16 +26,24 @@
       color: #667085;
     }
   }
-  .nav-link {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    color: $color_black_1;
-    padding: 0;
-    margin-right: 20px;
-    &.active,
-    &:hover {
-      color: $color_primary;
+  .navbar-nav {
+    .nav-link {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $color_black_1;
+      padding-left: 0;
+      padding-right: 0;
+      margin-right: 20px;
+      &.active,
+      &:hover {
+        color: $color_primary;
+      }
+    }
+  }
+  .search_form {
+    @include responsive(max, 767px) {
+      display: none !important;
     }
   }
 }
