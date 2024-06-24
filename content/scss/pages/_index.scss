@@ -1,20 +1,33 @@
 .home_page_hero_sec {
   margin-top: 39px;
+
   height: 452px;
   margin-bottom: 205px;
-  // background-image: url("/assets/images/home/hero_sec_bg.png");
-  background-image: url("/assets/images/home/Group\ 1000008422.svg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  @include responsive(max, 425px) {
+    height: auto;
+  }
+  .hero_container {
+    height: 100%;
+    border-radius: 38px;
+    background-image: url("/assets/images/home/hero_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 40px;
+    margin-left: 40px;
+    @include responsive(max, 425px) {
+      margin: 0;
+      padding-bottom: 2rem;
+    }
+  }
   .hero_sec_container {
-    // margin-left: 48px;
+    padding-left: 48px;
 
     .hero_welcome {
       font-size: 16px;
       font-weight: 700;
       line-height: 24px;
       color: $color_white;
-      margin-top: 65px;
+      padding-top: 65px;
       margin-bottom: 16px;
     }
     .hero_title {
@@ -24,6 +37,9 @@
       color: $color_white;
       max-width: 376px;
       margin-bottom: 24px;
+      @include responsive(max, 768px) {
+        max-width: initial;
+      }
     }
     .hero_subtitle {
       font-size: 16px;
@@ -32,6 +48,9 @@
       color: $color_white;
       margin-bottom: 32px;
       max-width: 442px;
+      @include responsive(max, 768px) {
+        max-width: initial;
+      }
     }
     .btns_container {
       display: flex;
@@ -61,6 +80,12 @@
         gap: 8px;
       }
     }
+  }
+
+  .scroll_down_cont {
+    text-align: center;
+    width: fit-content;
+    margin: -4px auto;
   }
 }
 
@@ -100,6 +125,9 @@
     max-width: 512px;
     @include responsive(max, 1024px) {
       font-size: 33px;
+    }
+    @include responsive(max, 768px) {
+      max-width: initial;
     }
     @include responsive(max, 425px) {
       font-size: 29px;
@@ -174,12 +202,25 @@
 .how_it_work {
   background-color: $color_primary;
   color: $color_white;
+  * {
+    transition: all 0.8s ease-in-out;
+  }
   &:hover {
     background-color: $color_white;
-    transition: all 1s ease-in-out;
     .card_container .card_num {
-      border-bottom: 1px solid red;
+      border-bottom-color: $color_black_1;
     }
+    .card_container .card_num::after {
+      content: "";
+      display: inline-block;
+      width: 174px;
+      height: 5px;
+      background-color: $color_primary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
     .sec_title {
       color: $color_primary;
     }
@@ -187,7 +228,7 @@
       background-color: $color_primary;
     }
     .sec_heading,
-    .card_title {
+    .card_container .card_title {
       color: $color_black_1;
     }
     .new_career {
@@ -197,13 +238,11 @@
     .card_subtitle {
       color: #1e1e1e80;
     }
- 
 
     .num-active {
       fill: $color_black_1;
       fill-opacity: 1;
     }
-    
   }
   .sec_title {
     font-size: 24px;
@@ -248,6 +287,7 @@
       font-weight: 900;
       line-height: 96px;
       border-bottom: 1px solid $color_white;
+      position: relative;
     }
     .card_title {
       font-size: 24px;
@@ -266,3 +306,352 @@
   }
 }
 
+.expert_instructor_sec {
+  padding-top: 120px;
+
+  .sec_title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    max-width: 558px;
+    margin-bottom: 16px;
+    .experienced {
+      border: 2px solid $color_primary;
+      border-radius: 60px;
+      width: 225.5px;
+      height: 72px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 60px;
+        border: 2px solid $color_primary;
+        margin: 9px;
+        border-top: 0;
+        border-left: 0;
+      }
+    }
+  }
+  .sec_subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: $color_black_50;
+    max-width: 554px;
+  }
+  .slider_container {
+    // background-color: gray;
+    padding: 32px;
+    .quote_text {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      color: $color_black_1;
+      max-width: 472px;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+      position: initial;
+      margin-top: 64px;
+    }
+    .carousel-control-next {
+      width: 48px;
+      height: 48px;
+      padding: 12px;
+      border-radius: 6px;
+      background-color: $color_primary;
+    }
+    .carousel-control-prev {
+      width: 48px;
+      height: 48px;
+      padding: 12px;
+      border-radius: 6px;
+    }
+  }
+  // .instructor_imgs_container {
+  //   width: 711px;
+  //   height: 738px;
+  //   img {
+  //     margin-left: 4rem;
+  //   }
+  // }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.gallery img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.img-container {
+    overflow: hidden;
+}
+.img-1 { flex: 1 1 100px; }
+.img-2 { flex: 2 1 150px; }
+.img-3 { flex: 1 1 150px; }
+.img-4 { flex: 1 1 271px; }
+.img-5 { flex: 1 1 234px; }
+.img-6 { flex: 1 1 150px; }
+.img-7 { flex: 1 1 150px; }
+.img-8 { flex: 1 1 150px; }
+}
+
+.explore_courses_sec {
+  .sec_title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: $color_primary;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    margin-top: 148px;
+
+    &::before {
+      content: "";
+      width: 22px;
+      height: 2px;
+      border-radius: 30px;
+      background-color: $color_primary;
+      display: inline-block;
+      margin-right: 8px;
+    }
+  }
+  .sec_name {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: $color_black_1;
+    margin-bottom: 16px;
+  }
+  .sec_subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: $color_black_50;
+    max-width: 481px;
+    margin-bottom: 48px;
+  }
+  .course_container {
+    // width: 405px;
+    // height: 477px;
+    border-radius: 20px;
+    border: 2px solid #cecece;
+
+    @include responsive(max, 1400px) {
+      width: auto;
+    }
+
+    .course_img {
+      width: 100% !important;
+    }
+    .course_img_container {
+      margin-bottom: 24px;
+    }
+    .course_inner_padding {
+      padding: 24px;
+    }
+    .course_category {
+      width: 130.81px;
+      height: 25px;
+      border-radius: 4px;
+      background: #106ad41a;
+      padding: 3px 30px;
+    }
+    .course_name {
+      margin-top: 32px;
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 27px;
+      color: $color_black;
+      margin-bottom: 19px;
+    }
+    .course_info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      span {
+        padding-left: 4px;
+      }
+    }
+    .course_btns_container {
+      display: flex;
+      justify-content: space-between;
+      .btn_view_course {
+        width: 156.12px;
+        height: 48px;
+        padding: 8px 16px;
+        border-radius: 6px;
+        background-color: $color_primary;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 21px;
+        color: $color_white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+      }
+      .price_now {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+        display: block;
+        color: $color_primary;
+      }
+      .price_before {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: $color_black_1;
+        text-decoration: line-through;
+      }
+    }
+  }
+  .btn_explore_container {
+    margin-top: 83px;
+    text-align: center;
+    margin-bottom: 181px;
+    .btn_explore {
+      width: 216px;
+      height: 56px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      color: $color_black_1;
+      border: 1px solid #cccccc;
+      box-shadow: 0px 1px 2px 0px #1018280d;
+      padding: 16px 24px;
+    }
+  }
+
+  .owl-carousel .owl-item img {
+    display: initial;
+    width: initial;
+  }
+
+  .owl-item {
+    margin-bottom: 2rem;
+  }
+  .owl-carousel {
+    position: relative;
+
+    .owl-dots {
+      display: inline-block !important;
+      position: absolute;
+      bottom: -43px;
+      #{$s}: 50%;
+      transform: translateX(-1 * 50%);
+      border-radius: 4rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 4px 8px;
+
+      .owl-dot {
+        border: 1px solid transparent;
+        padding: 10px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        opacity: 0.5;
+        background-color: #cccccc !important;
+        transition: all 0.3s ease-in-out;
+        margin-inline: 5px;
+
+        &.active {
+          width: 48px;
+          height: 12px;
+          border-radius: 6px;
+          opacity: 1;
+          background-color: $color_primary !important;
+        }
+      }
+    }
+
+    .owl-stage-outer {
+      padding-inline: 1px;
+    }
+  }
+}
+
+.email_sec {
+  height: 401px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 16px;
+  margin-bottom: 108px;
+
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62.4px;
+    letter-spacing: -0.06em;
+    color: $color_white;
+    margin-bottom: 32px;
+  }
+  .txt_container {
+    padding-left: 48px;
+    @include responsive(max, 375px) {
+      width: auto;
+      padding: 10px;
+    }
+  }
+
+  .input_group {
+    width: 328px;
+    height: 48px;
+    border-radius: 25px;
+    background-color: $color_white;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    @include responsive(max, 375px) {
+      width: auto;
+    }
+
+    .email {
+      border: none;
+      border-radius: inherit;
+      outline: none;
+      padding-left: 16px;
+      width: 75%;
+
+      ::placeholder {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: $color_black_50;
+      }
+    }
+
+    .btn_send {
+      width: 96px;
+      height: 32px;
+      padding: 12px;
+      border-radius: 25px;
+      background-color: $color_primary;
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 13.5px;
+      text-align: center;
+      color: $color_white;
+      border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.mb_20 {
+  margin-bottom: 20px;
+}

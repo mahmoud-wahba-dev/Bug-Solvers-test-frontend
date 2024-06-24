@@ -13,13 +13,13 @@ $(document).ready(function () {
       dots: true,
       responsive: {
         0: {
-          items: 1.1,
+          items: 1,
         },
         600: {
-          items: 2.1,
+          items: 2,
         },
         1000: {
-          items: 3.4,
+          items: 3,
         },
       },
     });
