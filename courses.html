@@ -1,0 +1,2222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses Page</title>
+
+    <!-- Global bootstrap CDN V5.2  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Global main css file for ltr  -->
+    <link rel="stylesheet" href="./content/css/dist/main-ltr.css" />
+
+  </head>
+
+  <body>
+    <!-- start navabr -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img
+            src="./assets/images/navbar/Bug-solvers-logo.svg"
+            alt="Bug-solvers-logo.svg"
+          />
+        </a>
+        <form class="d-flex search-form search_form" role="search">
+          <input
+            class="form-control search_input"
+            type="search"
+            placeholder="Want to learn?"
+            aria-label="Search"
+          />
+        </form>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="offcanvasExample">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/navbar/lang_icon.svg"
+                  alt="lang_icon.svg"
+                />
+                English
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close ms-auto"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav class="">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+          <form class="d-flex search-form search_form my-3" role="search">
+            <input
+              class="form-control search_input"
+              type="search"
+              placeholder="Want to learn?"
+              aria-label="Search"
+            />
+          </form>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/navbar/lang_icon.svg"
+                  alt="lang_icon.svg"
+                />
+                English
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">English</a></li>
+                <li><a class="dropdown-item" href="#">Arabic</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end navabr -->
+
+    <main>
+      <!-- start hero -->
+      <section>
+        <div class="container">
+          <div
+            class="courses_page_hero"
+            style="background-image: url(./content/images/contact-us/hero.png)"
+          >
+            <div class="contact-hero__content">
+              <h5 class="title">Contact Us</h5>
+              <h1 class="subtitle">Get In Touch</h1>
+              <p class="description">
+                Have Questions? we’re Here For You. Drop Us A Line, Write Us An
+                Email Or Us Send Us A Text
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="courses_page_sec_with-tabs">
+        <div class="container">
+          <div class="sec_with_tabs_container">
+            <div class="d-flex justify-content-between">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="pills-All-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-All"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-All"
+                    aria-selected="true"
+                  >
+                    All Recommendation
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-Illustrator-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Illustrator"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Illustrator"
+                    aria-selected="false"
+                  >
+                    Adobe Illustrator
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-Photoshop-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Photoshop"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Photoshop"
+                    aria-selected="false"
+                  >
+                    Adobe Photoshop
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-UI-Design-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-UI-Design"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-UI-Design"
+                    aria-selected="false"
+                  >
+                    UI Design
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-Web-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Web"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Web"
+                    aria-selected="false"
+                  >
+                    Web Programming
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-Mobile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Mobile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Mobile"
+                    aria-selected="false"
+                  >
+                    Mobile Programming
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-Backend-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-Backend"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-Backend"
+                    aria-selected="false"
+                  >
+                    Backend Development
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-All"
+                role="tabpanel"
+                aria-labelledby="pills-All-tab"
+                tabindex="0"
+              >
+                <div class="row gap_x_y">
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="pills-Illustrator"
+                role="tabpanel"
+                aria-labelledby="pills-Illustrator-tab"
+                tabindex="0"
+              >
+                <div class="row gap_x_y">
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-Photoshop"
+                role="tabpanel"
+                aria-labelledby="pills-Photoshop-tab"
+                tabindex="0"
+              >
+                <div class="row gap_x_y">
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-UI-Design"
+                role="tabpanel"
+                aria-labelledby="pills-UI-Design-tab"
+                tabindex="0"
+              >
+                <div class="row gap_x_y">
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-Web"
+                role="tabpanel"
+                aria-labelledby="pills-Web-tab"
+                tabindex="0"
+              >
+                <div class="row gap_x_y">
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-Mobile"
+                role="tabpanel"
+                aria-labelledby="pills-Mobile-tab"
+                tabindex="0"
+              >
+                <div class="row gap_x_y">
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="pills-Backend"
+                role="tabpanel"
+                aria-labelledby="pills-Backend-tab"
+                tabindex="0"
+              >
+                <div class="row gap_x_y">
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="course_container">
+                      <div class="course_img_container">
+                        <img
+                          class="course_img"
+                          src="./assets/images/home/course_img.png"
+                          alt="course_img.png"
+                        />
+                      </div>
+
+                      <div class="course_inner_padding">
+                        <div class="">
+                          <span class="course_category">Back -End</span>
+                        </div>
+                        <h5 class="course_name">
+                          Introduction to User Experience Design
+                        </h5>
+                        <div class="course_details">
+                          <div class="course_info">
+                            <div>
+                              <img
+                                src="./assets/images/home/stack-line.svg"
+                                alt="stack-line.svg"
+                              />
+                              <span>Beginner</span>
+                            </div>
+                            <div>
+                              <img
+                                src="./assets/images/home/time-icon.svg"
+                                alt="time-icon.svg"
+                              />
+                              <span>12 Hours</span>
+                            </div>
+
+                            <div>
+                              <img
+                                src="./assets/images/home/star.svg"
+                                alt="star.svg"
+                              />
+                              <span>4.5 (3k reviews)</span>
+                            </div>
+                          </div>
+
+                          <div class="course_btns_container">
+                            <a class="btn_view_course" href="">
+                              View Course
+                              <img
+                                src="./assets/images/home/arrow_right.svg"
+                                alt="arrow_right.svg"
+                              />
+                            </a>
+                            <div>
+                              <span class="price_now">$ 100.000</span>
+                              <span class="price_before">$ 450.000</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <div class="logo_container">
+              <img
+                src="./assets/images/footer/Bug-solvers-footer.svg"
+                alt="Bug-solvers-footer.svg"
+              />
+            </div>
+            <p class="stay_up_to">Stay Up to date with the latest course</p>
+            <div class="social_icons_container">
+              <a href="">
+                <img src="./assets/images/footer/fb.svg" alt="fb.svg" />
+              </a>
+              <a href="">
+                <img
+                  src="./assets/images/footer/Instragarm.svg"
+                  alt="Instragarm.svg"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./assets/images/footer/Linkedin.svg"
+                  alt="Linkedin.svg"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./assets/images/footer/Twitter.svg"
+                  alt="Twitter.svg"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./assets/images/footer/youtube.svg"
+                  alt="youtube.svg"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="column_title">Top 4 Category</h6>
+            <div class="d-flex flex-column">
+              <a href=""> Development </a>
+              <a href=""> Finance & Accounting </a>
+              <a href=""> Design </a>
+              <a href=""> Business </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="column_title">Quick Links</h6>
+            <div class="d-flex flex-column">
+              <a href=""> Home </a>
+              <a class="contact_us_link" href="">
+                Contact Us
+                <img
+                  class="pl_12"
+                  src="./assets/images/footer/ArrowRight.svg"
+                  alt="ArrowRight.svg"
+                />
+              </a>
+              <a href=""> About Us </a>
+              <a href=""> Courses </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="column_title mb-2">
+              <img
+                class="pr_8"
+                src="./assets/images/footer/Location.svg"
+                alt="Location.svg"
+              />
+              Address:
+            </h6>
+            <p class="mb_18">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </p>
+            <div class="mb_18">
+              <img
+                class="pr_8"
+                src="./assets/images/footer/Calling.svg"
+                alt="Calling.svg"
+              />
+              <a href="tel:9229341037"> Tel :+9229341037 </a>
+            </div>
+            <div class="mb_18">
+              <img
+                class="pr_8"
+                src="./assets/images/footer/Time Circle.svg"
+                alt="Time Circle.svg"
+              />
+              <span> Response hours: 8 to 20 </span>
+            </div>
+            <div class="mb_18">
+              <img
+                class="pr_8"
+                src="./assets/images/footer/Message.svg"
+                alt="Message.svg"
+              />
+              <a href="mailto:info@onlearn.com"> Email: info@onlearn.com </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact_info_container">
+          <div class="d-flex gap_16 flex-wrap">
+            <div>
+              <img
+                class="pr_10"
+                src="./assets/images/footer/blue_mail_icon.svg"
+                alt="blue_mail_icon.svg"
+              />
+              <a href="mailto:hello@squareup.com">hello@squareup.com</a>
+            </div>
+            <div>
+              <img
+                class="pr_10"
+                src="./assets/images/footer/blue_phone_icon.svg"
+                alt="blue_phone_icon.svg"
+              />
+              <a href="tel:+9191813232309">+91 91813 23 2309</a>
+            </div>
+            <div>
+              <img
+                class="pr_10"
+                src="./assets/images/footer/blue_location_icon.svg"
+                alt="blue_location_icon.svg"
+              />
+              <span>Somewhere in the World</span>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button
+              class="dropdown-toggle lang_dropdown"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              English
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copy_wright">
+          &copy; 2024 - Bug Solvers. Designed by Mohamed MonGe. All rights
+          reserved
+        </p>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Global Bootstrap CDN V5.3.2  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- additional general JS File -->
+
+    <script src="./content/js/general.js"></script>
+  </body>
+</html>

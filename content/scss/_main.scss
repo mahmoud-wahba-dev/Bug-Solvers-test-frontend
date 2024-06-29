@@ -7,13 +7,14 @@
 
 // components
 // @import "./components/otp";
+@import "./components/newletter_subscribe_sec";
+@import "./components/course_card";
 // layout
-
 @import "./layout/navbar";
 @import "./layout/footer";
 
 // pages
 @import "./pages/index";
-@import "./pages/contact";
-
-
+@import "./pages/about_us";
+@import "./pages/courses";
+@import "./pages/course_details";
