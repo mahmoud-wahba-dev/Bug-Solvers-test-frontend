@@ -1,0 +1,68 @@
+.courses_page_hero {
+  padding: 80px 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 27px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 324px;
+  margin-bottom: 120px;
+  &__content {
+    width: 40%;
+    color: white;
+  }
+
+  .title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: $color_white_fb;
+    margin-bottom: 16px;
+  }
+  .subtitle {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: $color_white;
+    margin-bottom: 24px;
+  }
+  .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color_white_fb;
+    max-width: 461px;
+  }
+}
+
+.courses_page_sec_with-tabs {
+  .nav-link {
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #cccccc;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: $color_black_50;
+  }
+  .nav-pills .nav-link.active {
+    background-color: white;
+    color: $color_primary;
+    border-color: $color_primary;
+  }
+  .nav-pills {
+    gap: 16px;
+    margin-bottom: 56px;
+  }
+
+  .gap_x_y {
+    gap: 48px 0;
+  }
+  .tab-content {
+    margin-bottom: 79px;
+  }
+}

@@ -1,0 +1,104 @@
+.course_container {
+  // width: 405px;
+  // height: 477px;
+  border-radius: 20px;
+  border: 2px solid #cecece;
+
+  @include responsive(max, 1400px) {
+    width: auto;
+  }
+
+  .course_img {
+    width: 100% !important;
+  }
+  .course_img_container {
+    margin-bottom: 24px;
+  }
+  .course_inner_padding {
+    padding: 24px;
+  }
+  .course_category {
+    width: 130.81px;
+    height: 25px;
+    border-radius: 4px;
+    background: #106ad41a;
+    padding: 3px 30px;
+  }
+  .course_name {
+    margin-top: 32px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 27px;
+    color: $color_black;
+    margin-bottom: 19px;
+  }
+  .course_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    gap: 16px;
+    @include responsive(max, 768px) {
+      flex-direction: column;
+    }
+    span {
+      padding-left: 4px;
+    }
+  }
+  .course_btns_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 86px;
+    @include responsive(max, 1200px) {
+      gap: 0;
+    }
+    @include responsive(max, 768px) {
+      flex-direction: column;
+      gap: 17px;
+    }
+    .btn_view_course {
+      width: 156.12px;
+      height: 48px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background-color: $color_primary;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 21px;
+      color: $color_white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      @include responsive(max, 1024px) {
+        gap: 0;
+        width: auto;
+
+      }
+      @include responsive(max, 768px) {
+        gap: 12px;
+      }
+    }
+    .price_now {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 30px;
+      display: block;
+      color: $color_primary;
+
+      @include responsive(max, 1200px) {
+        font-size: 20px;
+      }
+      @include responsive(max, 768px) {
+        font-size: 24px;
+    }
+    }
+    .price_before {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $color_black_1;
+      text-decoration: line-through;
+    }
+  }
+}

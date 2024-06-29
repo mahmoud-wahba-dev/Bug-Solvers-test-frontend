@@ -1,0 +1,253 @@
+.about_us_hero_sec {
+  height: 452px;
+
+  @include responsive(max, 1024px) {
+    height: auto;
+  }
+  .bg_hero {
+    height: 100%;
+    background-image: url("/assets/images/about_us/about_us_hero_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 23px;
+  }
+
+  .hero_txt_container {
+    padding-left: 68px;
+    @include responsive(max, 1024px) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    @include responsive(max, 425px) {
+      padding-left: 30px;
+    }
+    @include responsive(max, 375px) {
+      padding: 20px;
+    }
+    .title {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      color: $color_white_fb;
+      margin-bottom: 16px;
+    }
+    .subtitle {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 56px;
+      max-width: 461px;
+      margin-bottom: 24px;
+      color: $color_white;
+    }
+    .description {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      color: $color_white_fb;
+      max-width: 461px;
+    }
+  }
+  .video_container {
+    position: relative;
+    @include responsive(max, 425px) {
+      text-align: center;
+      padding-bottom: 2rem;
+    }
+  }
+  .play_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+  .child_pic {
+    width: 100%;
+    @include responsive(max, 1024px) {
+      width: 90%;
+    }
+  }
+}
+
+.foundation_sec {
+  margin-top: 120px;
+
+  .title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: $color_black_1;
+    margin-bottom: 16px;
+  }
+  .color_blue {
+    color: $color_primary;
+  }
+  .subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    color: $color_black_50;
+    margin-bottom: 48px;
+  }
+  .card_container {
+    .card_title_container {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 24px;
+
+      .card_title {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 48px;
+        color: $color_black_1;
+      }
+    }
+    .card_description {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 27px;
+      color: $color_black_50;
+      max-width: 341px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.instructors_sec_rating {
+  margin-top: 120px;
+  .title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: center;
+    color: $color_black_1;
+    margin-bottom: 16px;
+  }
+  .text_blue {
+    color: $color_primary;
+  }
+  .subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    color: $color_black_600;
+    margin-bottom: 48px;
+  }
+
+  .card_container {
+    width: 296px;
+    height: 400.01px;
+    padding: 16px 56px;
+    border-radius: 12px;
+    border: 1px solid #f2f2f2;
+    text-align: center;
+    margin-bottom: 48px;
+    margin-right: 25px;
+    @include responsive(max, 1399px) {
+      width: 100%;
+      height: auto;
+    }
+
+    .instructor_img_container {
+      margin-bottom: 16px;
+      img {
+        width: 125px;
+        height: 125px;
+        border-radius: 50%;
+        margin: auto;
+      }
+    }
+    .instructor_desc {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #737373;
+      margin-bottom: 16px;
+    }
+    .rating_container {
+      margin-bottom: 16px;
+    }
+    .instructor_name {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: #252b42;
+      margin-bottom: 5px;
+    }
+    .instructor_job {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 24px;
+      color: #737373;
+    }
+  }
+
+  .owl-carousel {
+    position: relative;
+
+    .owl-dots {
+      position: absolute;
+      bottom: -30px;
+      left: 50%;
+      transform: translateX(-1 * 50%);
+      border-radius: 4rem;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      padding: 4px 8px;
+
+      .owl-dot {
+        border: 1px solid transparent;
+        padding: 10px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        opacity: 0.5;
+        background-color: #ccc !important;
+        transition: all 0.3s ease-in-out;
+        margin: 0;
+
+        &.active {
+          width: 48px;
+          height: 12px;
+          border-radius: 6px;
+          opacity: 1;
+          background-color: $color_primary !important;
+        }
+      }
+    }
+
+    .owl-stage-outer {
+      padding-inline: 1px;
+    }
+  }
+}
+
+.about_us_subscribe_sec {
+  margin-top: 120px;
+  height: 438.66px;
+  @include responsive(max, 425px) {
+    height: auto;
+    padding: 2rem;
+  }
+  .title {
+    margin-bottom: 24px;
+  }
+  .subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: $color_white;
+    max-width: 415px;
+    margin-bottom: 24px;
+  }
+  .txt_container {
+    @include responsive(max, 425px) {
+      padding: 20px;
+    }
+  }
+}

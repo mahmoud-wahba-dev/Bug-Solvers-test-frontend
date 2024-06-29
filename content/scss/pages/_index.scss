@@ -383,24 +383,40 @@
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
-}
-.gallery img {
+  }
+  .gallery img {
     display: block;
     max-width: 100%;
     height: auto;
     object-fit: cover;
-}
-.img-container {
+  }
+  .img-container {
     overflow: hidden;
-}
-.img-1 { flex: 1 1 100px; }
-.img-2 { flex: 2 1 150px; }
-.img-3 { flex: 1 1 150px; }
-.img-4 { flex: 1 1 271px; }
-.img-5 { flex: 1 1 234px; }
-.img-6 { flex: 1 1 150px; }
-.img-7 { flex: 1 1 150px; }
-.img-8 { flex: 1 1 150px; }
+  }
+  .img-1 {
+    flex: 1 1 100px;
+  }
+  .img-2 {
+    flex: 2 1 150px;
+  }
+  .img-3 {
+    flex: 1 1 150px;
+  }
+  .img-4 {
+    flex: 1 1 271px;
+  }
+  .img-5 {
+    flex: 1 1 234px;
+  }
+  .img-6 {
+    flex: 1 1 150px;
+  }
+  .img-7 {
+    flex: 1 1 150px;
+  }
+  .img-8 {
+    flex: 1 1 150px;
+  }
 }
 
 .explore_courses_sec {
@@ -439,82 +455,7 @@
     max-width: 481px;
     margin-bottom: 48px;
   }
-  .course_container {
-    // width: 405px;
-    // height: 477px;
-    border-radius: 20px;
-    border: 2px solid #cecece;
-
-    @include responsive(max, 1400px) {
-      width: auto;
-    }
-
-    .course_img {
-      width: 100% !important;
-    }
-    .course_img_container {
-      margin-bottom: 24px;
-    }
-    .course_inner_padding {
-      padding: 24px;
-    }
-    .course_category {
-      width: 130.81px;
-      height: 25px;
-      border-radius: 4px;
-      background: #106ad41a;
-      padding: 3px 30px;
-    }
-    .course_name {
-      margin-top: 32px;
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 27px;
-      color: $color_black;
-      margin-bottom: 19px;
-    }
-    .course_info {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 32px;
-      span {
-        padding-left: 4px;
-      }
-    }
-    .course_btns_container {
-      display: flex;
-      justify-content: space-between;
-      .btn_view_course {
-        width: 156.12px;
-        height: 48px;
-        padding: 8px 16px;
-        border-radius: 6px;
-        background-color: $color_primary;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 21px;
-        color: $color_white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-      }
-      .price_now {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 30px;
-        display: block;
-        color: $color_primary;
-      }
-      .price_before {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        color: $color_black_1;
-        text-decoration: line-through;
-      }
-    }
-  }
+ 
   .btn_explore_container {
     margin-top: 83px;
     text-align: center;
@@ -579,75 +520,6 @@
 
     .owl-stage-outer {
       padding-inline: 1px;
-    }
-  }
-}
-
-.email_sec {
-  height: 401px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 16px;
-  margin-bottom: 108px;
-
-  .title {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 62.4px;
-    letter-spacing: -0.06em;
-    color: $color_white;
-    margin-bottom: 32px;
-  }
-  .txt_container {
-    padding-left: 48px;
-    @include responsive(max, 375px) {
-      width: auto;
-      padding: 10px;
-    }
-  }
-
-  .input_group {
-    width: 328px;
-    height: 48px;
-    border-radius: 25px;
-    background-color: $color_white;
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    @include responsive(max, 375px) {
-      width: auto;
-    }
-
-    .email {
-      border: none;
-      border-radius: inherit;
-      outline: none;
-      padding-left: 16px;
-      width: 75%;
-
-      ::placeholder {
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 18px;
-        color: $color_black_50;
-      }
-    }
-
-    .btn_send {
-      width: 96px;
-      height: 32px;
-      padding: 12px;
-      border-radius: 25px;
-      background-color: $color_primary;
-      font-size: 9px;
-      font-weight: 500;
-      line-height: 13.5px;
-      text-align: center;
-      color: $color_white;
-      border: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
 }
