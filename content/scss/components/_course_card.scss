@@ -37,27 +37,51 @@
     justify-content: space-between;
     margin-bottom: 32px;
     gap: 16px;
+    flex-wrap: wrap;
+
     @include responsive(max, 768px) {
       flex-direction: column;
     }
     span {
       padding-left: 4px;
     }
+    div {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      @include responsive(max, 1200x) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
   }
   .course_btns_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 86px;
+    gap: 10px;
     @include responsive(max, 1200px) {
-      gap: 0;
+      gap: 10px;
+    }
+    @include responsive(max, 991px) {
+      flex-wrap: wrap;
     }
     @include responsive(max, 768px) {
       flex-direction: column;
       gap: 17px;
     }
+    div {
+      // flex: 1;
+      @include responsive(max, 1199px) {
+        width: 50%;
+      }
+      @include responsive(max, 991px) {
+        width: 100%;
+      }
+    }
     .btn_view_course {
       width: 156.12px;
+      // flex: 1;
       height: 48px;
       padding: 8px 16px;
       border-radius: 6px;
@@ -73,10 +97,14 @@
       @include responsive(max, 1024px) {
         gap: 0;
         width: auto;
-
+      }
+      @include responsive(max, 991px) {
+        gap: 10px;
+       
       }
       @include responsive(max, 768px) {
         gap: 12px;
+        width: 100%;
       }
     }
     .price_now {
@@ -91,7 +119,7 @@
       }
       @include responsive(max, 768px) {
         font-size: 24px;
-    }
+      }
     }
     .price_before {
       font-size: 16px;

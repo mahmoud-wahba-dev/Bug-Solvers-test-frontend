@@ -13,6 +13,12 @@
   &__content {
     width: 40%;
     color: white;
+    @include responsive(max, 991px) {
+      width: 60%;
+    }
+    @include responsive(max, 425px) {
+      width: 100%;
+    }
   }
 }
 
@@ -41,6 +47,8 @@
       text-align: center;
       @include responsive(max, 991px) {
         padding: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
       }
     }
 
@@ -136,6 +144,9 @@
       @include responsive(max, 991px) {
         gap: 12px;
       }
+      @include responsive(max,425px){
+        flex-wrap: wrap;
+      }
     }
 
     .input-field {
@@ -145,6 +156,9 @@
       background-color: #e6e6e6;
       padding: 16px;
       border-radius: 8px;
+      @include responsive(max,425px){
+        flex-basis: 100%;
+      }
     }
 
     .input-field label {

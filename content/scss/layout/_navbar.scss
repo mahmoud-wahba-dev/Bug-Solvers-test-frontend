@@ -9,6 +9,9 @@
     @include responsive(max, 1200px) {
       margin-right: 50px;
     }
+    @include responsive(max, 1055px) {
+      margin-right: 1%;
+    }
   }
   .search_input {
     flex-basis: 367px;
@@ -45,5 +48,19 @@
     @include responsive(max, 767px) {
       display: none !important;
     }
+  }
+  .container{
+    @include responsive(max, 1199px) {
+      max-width: 100%;
+    }
+  }
+  .navbar-collapse{
+    @include responsive(max, 1014px) {
+      flex-basis: 80%;
+    }
+  }
+
+  .dropdown-menu[data-bs-popper] {
+    left: -35px;
   }
 }
