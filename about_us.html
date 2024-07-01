@@ -32,16 +32,106 @@
   </head>
 
   <body>
-    <!-- start navabr -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="/">
-          <img
-            src="./assets/images/navbar/Bug-solvers-logo.svg"
-            alt="Bug-solvers-logo.svg"
-          />
-        </a>
-        <form class="d-flex search-form search_form" role="search">
+   <!-- start navabr -->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img
+          src="./assets/images/navbar/Bug-solvers-logo.svg"
+          alt="Bug-solvers-logo.svg"
+        />
+      </a>
+      <form class="d-flex search-form search_form" role="search">
+        <input
+          class="form-control search_input"
+          type="search"
+          placeholder="Want to learn?"
+          aria-label="Search"
+        />
+      </form>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="offcanvasExample">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/images/navbar/lang_icon.svg"
+                alt="lang_icon.svg"
+              />
+              English
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel"
+  >
+    <div class="offcanvas-header">
+      <button
+        type="button"
+        class="btn-close ms-auto"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="d-flex search-form search_form my-3" role="search">
           <input
             class="form-control search_input"
             type="search"
@@ -49,122 +139,32 @@
             aria-label="Search"
           />
         </form>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="offcanvasExample">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/about_us.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/courses.html">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact us</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="./assets/images/navbar/lang_icon.svg"
-                  alt="lang_icon.svg"
-                />
-                English
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">English</a></li>
-                <li><a class="dropdown-item" href="#">Arabic</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <button
-          type="button"
-          class="btn-close ms-auto"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <nav class="">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about_us.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/courses.html">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html">Contact us</a>
-            </li>
-          </ul>
-          <form class="d-flex search-form search_form my-3" role="search">
-            <input
-              class="form-control search_input"
-              type="search"
-              placeholder="Want to learn?"
-              aria-label="Search"
-            />
-          </form>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="./assets/images/navbar/lang_icon.svg"
-                  alt="lang_icon.svg"
-                />
-                English
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">English</a></li>
-                <li><a class="dropdown-item" href="#">Arabic</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/images/navbar/lang_icon.svg"
+                alt="lang_icon.svg"
+              />
+              English
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <!-- end navabr -->
+  </div>
+  <!-- end navabr -->
 
     <main>
       <section class="about_us_hero_sec">
@@ -456,162 +456,162 @@
         </div>
       </section>
     </main>
-   <!-- start footer -->
-   <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-lg-3">
-          <div class="logo_container">
-            <img
-              src="./assets/images/footer/Bug-solvers-footer.svg"
-              alt="Bug-solvers-footer.svg"
-            />
+    <!-- start footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-lg-3">
+            <div class="logo_container">
+              <img
+                src="./assets/images/footer/Bug-solvers-footer.svg"
+                alt="Bug-solvers-footer.svg"
+              />
+            </div>
+            <p class="stay_up_to">Stay Up to date with the latest course</p>
+            <div class="social_icons_container">
+              <a href="">
+                <img src="./assets/images/footer/fb.svg" alt="fb.svg" />
+              </a>
+              <a href="">
+                <img
+                  src="./assets/images/footer/Instragarm.svg"
+                  alt="Instragarm.svg"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./assets/images/footer/Linkedin.svg"
+                  alt="Linkedin.svg"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./assets/images/footer/Twitter.svg"
+                  alt="Twitter.svg"
+                />
+              </a>
+              <a href="">
+                <img
+                  src="./assets/images/footer/youtube.svg"
+                  alt="youtube.svg"
+                />
+              </a>
+            </div>
           </div>
-          <p class="stay_up_to">Stay Up to date with the latest course</p>
-          <div class="social_icons_container">
-            <a href="">
-              <img src="./assets/images/footer/fb.svg" alt="fb.svg" />
-            </a>
-            <a href="">
+          <div class="col-md-4 col-lg-3">
+            <h6 class="column_title">Top 4 Category</h6>
+            <div class="d-flex flex-column">
+              <a href="courses.html"> Development </a>
+              <a href="courses.html"> Finance & Accounting </a>
+              <a href="courses.html"> Design </a>
+              <a href="courses.html"> Business </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="column_title">Quick Links</h6>
+            <div class="d-flex flex-column">
+              <a href="/"> Home </a>
+              <a class="contact_us_link" href="contact.html">
+                Contact Us
+                <img
+                  class="pl_12"
+                  src="./assets/images/footer/ArrowRight.svg"
+                  alt="ArrowRight.svg"
+                />
+              </a>
+              <a href="about_us.html"> About Us </a>
+              <a href="courses.html"> Courses </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3">
+            <h6 class="column_title mb-2">
               <img
-                src="./assets/images/footer/Instragarm.svg"
-                alt="Instragarm.svg"
+                class="pr_8"
+                src="./assets/images/footer/Location.svg"
+                alt="Location.svg"
               />
-            </a>
-            <a href="">
+              Address:
+            </h6>
+            <p class="mb_18">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            </p>
+            <div class="mb_18">
               <img
-                src="./assets/images/footer/Linkedin.svg"
-                alt="Linkedin.svg"
+                class="pr_8"
+                src="./assets/images/footer/Calling.svg"
+                alt="Calling.svg"
               />
-            </a>
-            <a href="">
+              <a href="tel:9229341037"> Tel :+9229341037 </a>
+            </div>
+            <div class="mb_18">
               <img
-                src="./assets/images/footer/Twitter.svg"
-                alt="Twitter.svg"
+                class="pr_8"
+                src="./assets/images/footer/Time Circle.svg"
+                alt="Time Circle.svg"
               />
-            </a>
-            <a href="">
+              <span> Response hours: 8 to 20 </span>
+            </div>
+            <div class="mb_18">
               <img
-                src="./assets/images/footer/youtube.svg"
-                alt="youtube.svg"
+                class="pr_8"
+                src="./assets/images/footer/Message.svg"
+                alt="Message.svg"
               />
-            </a>
+              <a href="mailto:info@onlearn.com"> Email: info@onlearn.com </a>
+            </div>
           </div>
         </div>
-        <div class="col-md-4 col-lg-3">
-          <h6 class="column_title">Top 4 Category</h6>
-          <div class="d-flex flex-column">
-            <a href="/courses.html"> Development </a>
-            <a href="/courses.html"> Finance & Accounting </a>
-            <a href="/courses.html"> Design </a>
-            <a href="/courses.html"> Business </a>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3">
-          <h6 class="column_title">Quick Links</h6>
-          <div class="d-flex flex-column">
-            <a href="/"> Home </a>
-            <a class="contact_us_link" href="/contact.html">
-              Contact Us
+        <div class="contact_info_container">
+          <div class="d-flex gap_16 flex-wrap">
+            <div>
               <img
-                class="pl_12"
-                src="./assets/images/footer/ArrowRight.svg"
-                alt="ArrowRight.svg"
+                class="pr_10"
+                src="./assets/images/footer/blue_mail_icon.svg"
+                alt="blue_mail_icon.svg"
               />
-            </a>
-            <a href="/about_us.html"> About Us </a>
-            <a href="/courses.html"> Courses </a>
+              <a href="mailto:hello@squareup.com">hello@squareup.com</a>
+            </div>
+            <div>
+              <img
+                class="pr_10"
+                src="./assets/images/footer/blue_phone_icon.svg"
+                alt="blue_phone_icon.svg"
+              />
+              <a href="tel:+9191813232309">+91 91813 23 2309</a>
+            </div>
+            <div>
+              <img
+                class="pr_10"
+                src="./assets/images/footer/blue_location_icon.svg"
+                alt="blue_location_icon.svg"
+              />
+              <span>Somewhere in the World</span>
+            </div>
           </div>
-        </div>
-        <div class="col-md-4 col-lg-3">
-          <h6 class="column_title mb-2">
-            <img
-              class="pr_8"
-              src="./assets/images/footer/Location.svg"
-              alt="Location.svg"
-            />
-            Address:
-          </h6>
-          <p class="mb_18">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-          </p>
-          <div class="mb_18">
-            <img
-              class="pr_8"
-              src="./assets/images/footer/Calling.svg"
-              alt="Calling.svg"
-            />
-            <a href="tel:9229341037"> Tel :+9229341037 </a>
-          </div>
-          <div class="mb_18">
-            <img
-              class="pr_8"
-              src="./assets/images/footer/Time Circle.svg"
-              alt="Time Circle.svg"
-            />
-            <span> Response hours: 8 to 20 </span>
-          </div>
-          <div class="mb_18">
-            <img
-              class="pr_8"
-              src="./assets/images/footer/Message.svg"
-              alt="Message.svg"
-            />
-            <a href="mailto:info@onlearn.com"> Email: info@onlearn.com </a>
-          </div>
-        </div>
-      </div>
-      <div class="contact_info_container">
-        <div class="d-flex gap_16 flex-wrap">
-          <div>
-            <img
-              class="pr_10"
-              src="./assets/images/footer/blue_mail_icon.svg"
-              alt="blue_mail_icon.svg"
-            />
-            <a href="mailto:hello@squareup.com">hello@squareup.com</a>
-          </div>
-          <div>
-            <img
-              class="pr_10"
-              src="./assets/images/footer/blue_phone_icon.svg"
-              alt="blue_phone_icon.svg"
-            />
-            <a href="tel:+9191813232309">+91 91813 23 2309</a>
-          </div>
-          <div>
-            <img
-              class="pr_10"
-              src="./assets/images/footer/blue_location_icon.svg"
-              alt="blue_location_icon.svg"
-            />
-            <span>Somewhere in the World</span>
-          </div>
-        </div>
 
-        <div class="dropdown">
-          <button
-            class="dropdown-toggle lang_dropdown"
-            type="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            English
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Arabic</a></li>
-          </ul>
+          <div class="dropdown">
+            <button
+              class="dropdown-toggle lang_dropdown"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              English
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+            </ul>
+          </div>
         </div>
+        <hr />
+        <p class="copy_wright">
+          &copy; 2024 - Bug Solvers. Designed by Mohamed MonGe. All rights
+          reserved
+        </p>
       </div>
-      <hr />
-      <p class="copy_wright">
-        &copy; 2024 - Bug Solvers. Designed by Mohamed MonGe. All rights
-        reserved
-      </p>
-    </div>
-  </footer>
-  <!-- end footer -->
+    </footer>
+    <!-- end footer -->
 
     <!-- Global Bootstrap CDN V5.3.2  -->
     <script
