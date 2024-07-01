@@ -1,6 +1,7 @@
 .navbar {
   height: 125px;
   padding: 0;
+  
   .navbar-brand {
     margin-right: 153px;
     @include responsive(max, 1400px) {
@@ -63,4 +64,14 @@
   .dropdown-menu[data-bs-popper] {
     left: -35px;
   }
+
+  .lang_dropdown_navbar {
+     img{
+       width: 20px;
+       height: 20px;
+     }
+  }
+
+
+  
 }

@@ -15,3 +15,18 @@ hr {
 a {
   text-decoration: none;
 }
+
+.whatsapp_icon {
+  // border: 1px solid red;
+  width: fit-content;
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
+  z-index: 100;
+  // background-color: #1da851;
+  border-radius: 50%;
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
