@@ -20,7 +20,7 @@
 // });
 let search_input = document.querySelector("#search_input_id");
 let search_result = document.querySelector("#search_result_id");
-
+console.log("hello");
 search_input.addEventListener("input", (eo) => {
   console.log("type");
   const query = eo.target.value.trim();
