@@ -30,3 +30,38 @@ a {
     height: 100px;
   }
 }
+
+.search_result {
+  // display: flex;
+  display: none;
+  width: 347px;
+  max-height: 232px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  top: 45px;
+  background-color: white;
+  padding: 15px;
+  flex-direction: column;
+  gap: 28px;
+  color: $color_primary;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  .result_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .result_img {
+    width: 50px;
+    height: 50px;
+  }
+  .result_inner_data {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+.search_form {
+  position: relative;
+}

@@ -18,3 +18,22 @@
 // search_icon.addEventListener("click", function () {
 //   search_input.focus();
 // });
+let search_input = document.querySelector("#search_input_id");
+let search_result = document.querySelector("#search_result_id");
+
+search_input.addEventListener("input", (eo) => {
+  console.log("type");
+  const query = eo.target.value.trim();
+  if (query.length > 0) {
+    $("#search_result").show();
+    search_result.style.display = "flex";
+  } else {
+    search_result.style.display = "none";
+  }
+});
+
+document.addEventListener("click", (eo) => {
+    if (!search_input.contains(eo.target) && !search_result.contains(eo.target)) {
+      search_result.style.display = "none";
+    }
+  });
