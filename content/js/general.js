@@ -22,10 +22,8 @@ let search_input = document.querySelector("#search_input_id");
 let search_result = document.querySelector("#search_result_id");
 console.log("hello");
 search_input.addEventListener("input", (eo) => {
-  console.log("type");
   const query = eo.target.value.trim();
   if (query.length > 0) {
-    $("#search_result").show();
     search_result.style.display = "flex";
   } else {
     search_result.style.display = "none";
