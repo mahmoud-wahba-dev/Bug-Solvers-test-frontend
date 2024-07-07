@@ -2,7 +2,7 @@ $(document).ready(function () {
   function initializeOwlCarousel() {
     var autoplayValue = $(window).width() >= 1000 ? false : true;
     var owl = $(".owl-carousel").owlCarousel({
-      loop: true,
+      // loop: true,
       margin: 20,
       nav: false,
       items: 1,

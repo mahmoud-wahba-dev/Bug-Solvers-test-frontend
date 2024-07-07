@@ -25,207 +25,212 @@
       </div>
     </section>
     <!-- end brand sec -->
-    <!-- start navabr -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="./assets/images/navbar/Bug-solvers-logo.svg"
-            alt="Bug-solvers-logo.svg"
-          />
+   <!-- start navabr -->
+   <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="./assets/images/navbar/Bug-solvers-logo.svg"
+          alt="Bug-solvers-logo.svg"
+        />
+      </a>
+      <form class="d-flex search-form search_form" role="search">
+        <input
+          class="form-control search_input"
+          id="search_input_id"
+          type="search"
+          placeholder="Want to learn?"
+          aria-label="Search"
+        />
+        <div class="search_result" id="search_result_id">
+          <a href="">
+            <div class="result_item">
+              <div class="result_inner_data">
+                <img
+                  class="result_img"
+                  src="./assets/images/home/course_img.png"
+                  alt="course_img.png"
+                />
+                <span> Introduction to User Experience Design </span>
+              </div>
+              <div>100$</div>
+            </div>
+          </a>
+          <a href="">
+            <div class="result_item">
+              <div class="result_inner_data">
+                <img
+                  class="result_img"
+                  src="./assets/images/home/course_img.png"
+                  alt="course_img.png"
+                />
+                <span> Introduction to User Experience Design </span>
+              </div>
+              <div>100$</div>
+            </div>
+          </a>
+          <a href="">
+            <div class="result_item">
+              <div class="result_inner_data">
+                <img
+                  class="result_img"
+                  src="./assets/images/home/course_img.png"
+                  alt="course_img.png"
+                />
+                <span> Introduction to User Experience Design </span>
+              </div>
+              <div>100$</div>
+            </div>
+          </a>
+          <a href="">
+            <div class="result_item">
+              <div class="result_inner_data">
+                <img
+                  class="result_img"
+                  src="./assets/images/home/course_img.png"
+                  alt="course_img.png"
+                />
+                <span> Introduction to User Experience Design </span>
+              </div>
+              <div>100$</div>
+            </div>
+          </a>
+        </div>
+      </form>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="offcanvasExample">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About us </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+        <a
+          class="nav-link lang_dropdown_navbar"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+        >
+          <img src="./assets/images/navbar/uk.png" alt="lang_icon.svg" />
+          EN
         </a>
-        <form class="d-flex search-form search_form" role="search">
+
+        <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0 lang_dropdown_navbar">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="./assets/images/navbar/uk.png" alt="lang_icon.svg" />
+              EN
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img
+                    src="./assets/images/navbar/uk.png"
+                    alt="lang_icon.svg"
+                  />
+                  EN
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img
+                    src="./assets/images/navbar/ar.png"
+                    alt="lang_icon_ar.svg"
+                  />
+                  AR
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul> -->
+      </div>
+    </div>
+  </nav>
+
+  <div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="offcanvasRight"
+    aria-labelledby="offcanvasRightLabel"
+  >
+    <div class="offcanvas-header">
+      <button
+        type="button"
+        class="btn-close ms-auto"
+        data-bs-dismiss="offcanvas"
+        aria-label="Close"
+      ></button>
+    </div>
+    <div class="offcanvas-body">
+      <nav class="">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_us.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact us</a>
+          </li>
+        </ul>
+        <form class="d-flex search-form search_form my-3" role="search">
           <input
             class="form-control search_input"
-            id="search_input_id"
+            id="search_input_id_mobile"
             type="search"
             placeholder="Want to learn?"
             aria-label="Search"
           />
-          <div class="search_result" id="search_result_id">
-            <a href="">
-              <div class="result_item">
-                <div class="result_inner_data">
-                  <img
-                    class="result_img"
-                    src="./assets/images/home/course_img.png"
-                    alt="course_img.png"
-                  />
-                  <span> Introduction to User Experience Design </span>
-                </div>
-                <div>100$</div>
-              </div>
-            </a>
-            <a href="">
-              <div class="result_item">
-                <div class="result_inner_data">
-                  <img
-                    class="result_img"
-                    src="./assets/images/home/course_img.png"
-                    alt="course_img.png"
-                  />
-                  <span> Introduction to User Experience Design </span>
-                </div>
-                <div>100$</div>
-              </div>
-            </a>
-            <a href="">
-              <div class="result_item">
-                <div class="result_inner_data">
-                  <img
-                    class="result_img"
-                    src="./assets/images/home/course_img.png"
-                    alt="course_img.png"
-                  />
-                  <span> Introduction to User Experience Design </span>
-                </div>
-                <div>100$</div>
-              </div>
-            </a>
-            <a href="">
-              <div class="result_item">
-                <div class="result_inner_data">
-                  <img
-                    class="result_img"
-                    src="./assets/images/home/course_img.png"
-                    alt="course_img.png"
-                  />
-                  <span> Introduction to User Experience Design </span>
-                </div>
-                <div>100$</div>
-              </div>
-            </a>
-          </div>
         </form>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasRight"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+        <a
+          class="nav-link lang_dropdown_navbar"
+          href="#"
+          id="navbarDropdown"
+          role="button"
         >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="offcanvasExample">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about_us.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="courses.html">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact us</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 lang_dropdown_navbar">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="./assets/images/navbar/uk.png" alt="lang_icon.svg" />
-                EN
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/images/navbar/uk.png"
-                      alt="lang_icon.svg"
-                    />
-                    EN
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img
-                      src="./assets/images/navbar/ar.png"
-                      alt="lang_icon_ar.svg"
-                    />
-                    AR
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-    >
-      <div class="offcanvas-header">
-        <button
-          type="button"
-          class="btn-close ms-auto"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <nav class="">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about_us.html">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="courses.html">Courses</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact us</a>
-            </li>
-          </ul>
-          <form class="d-flex search-form search_form my-3" role="search">
-            <input
-              class="form-control search_input"
-              type="search"
-              placeholder="Want to learn?"
-              aria-label="Search"
-            />
-          </form>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="./assets/images/navbar/lang_icon.svg"
-                  alt="lang_icon.svg"
-                />
-                English
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">English</a></li>
-                <li><a class="dropdown-item" href="#">Arabic</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
-      </div>
+          <img
+            width="20"
+            height="20"
+            src="./assets/images/navbar/uk.png"
+            alt="lang_icon.svg"
+          />
+          EN
+        </a>
+      </nav>
     </div>
-    <!-- end navabr -->
+  </div>
+  <!-- end navabr -->
 
     <main>
       <header
@@ -237,11 +242,13 @@
         <div class="row h-100">
           <div class="col-md-6 d-flex align-items-center">
             <div class="hero_container">
-              <h1 class="title">Introduction to User Experience Design</h1>
+              <h1 class="title">
+                Master Backend Development: Unlock Advanced Coding Skills
+              </h1>
               <p class="subtitle">
-                It’s explores creating meaningful user experiences through user
-                research, wireframing, prototyping, and usability testing. It
-                equips learners with skills to design effective
+                Join our Backend Development course to master advanced coding
+                techniques and build robust systems for modern applications,
+                gaining essential skills for success in today's tech industry.
               </p>
               <div class="btns_container">
                 <a class="btn_whatsapp" href="#"
@@ -258,7 +265,8 @@
           <div
             class="col-md-6 d-flex align-items-center justify-content-md-end"
           >
-            <div class="course_details_container">
+          
+            <!-- <div class="course_details_container">
               <h6 class="title">Courses Details</h6>
               <img
                 class="pinned_icon"
@@ -316,7 +324,7 @@
                 />
                 <span> Life Time Access To Material </span>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </header>
@@ -328,7 +336,7 @@
                 src="/assets/images/course_details/clock.svg"
                 alt="clock.svg"
               />
-              <span>3 Hours Duration</span>
+              <span>5 months</span>
             </div>
             <div>
               <img
@@ -337,37 +345,56 @@
               />
               <span>Beginner</span>
             </div>
-            <div>
+            <!-- <div>
               <img
                 src="./assets/images/course_details/user.svg"
                 alt="user.svg"
               />
               <span>15 Total Enrolled</span>
-            </div>
+            </div> -->
             <div>
               <img
                 src="./assets/images/course_details/book.svg"
                 alt="book.svg"
               />
-              <span>10 Session</span>
+              <span>9 Subjects</span>
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-8">
-              <h3 class="title">Course Description</h3>
+              <h3 class="title">Course Description (Back end php)</h3>
               <p class="subtitle">
-                Unlock the potential of creating exceptional user experiences
-                with our Comprehensive UX Design course. This program is
-                meticulously designed for aspiring UX designers, product
-                managers, developers, and anyone interested in the user-centered
-                design process. Through a blend of theory, practical exercises,
-                and real-world projects, you will gain the skills and knowledge
-                needed to excel in the dynamic field of UX design.
+                This course equips you with advanced coding skills to build
+                robust backend systems that drive modern applications. Gain
+                hands-on experience and practical knowledge essential for
+                excelling in today's tech-driven world.
               </p>
             </div>
             <div class="col-md-4 second_col">
-              <h4 class="second_title">What You’ll Get Out Of This?</h4>
+              <div class="video_container">
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/C0DPdy98e4c?si=Jl_W8RJXvpy98cka"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <!-- <img
+                  class="child_pic"
+                  src="./assets/images/about_us/hero_img.png"
+                  alt=""
+                /> -->
+                <!-- <img
+                  class="play_icon"
+                  src="./assets/images/about_us/play-circle-fill.png"
+                  alt=""
+                /> -->
+              </div>
+              <!-- <h4 class="second_title">What You’ll Get Out Of This?</h4>
               <div>
                 <img
                   src="./assets/images/course_details/true_icon.svg"
@@ -395,7 +422,7 @@
                   alt="true_icon.svg"
                 />
                 <span>wireframing, prototyping, and usability testing</span>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -410,7 +437,7 @@
                 src="./assets/images/course_details/lec_icon.svg"
                 alt="lec_icon.svg"
               />
-              <span class="lec_numbers">47 lectures</span>
+              <span class="lec_numbers">160 hr</span>
             </div>
             <div>
               <span class="dot my_10"></span>
@@ -418,7 +445,7 @@
                 src="./assets/images/course_details/course_time.svg"
                 alt="course_time.svg"
               />
-              <span class="lec_duration">10.4h duration </span>
+              <span class="lec_duration">9 Subjects </span>
             </div>
           </div>
           <div>
@@ -433,7 +460,7 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Introduction to Business
+                    1- PHP Basics
                   </button>
                 </h2>
                 <div
@@ -442,15 +469,19 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It
-                    is shown by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <ul>
+                      <li>Introduction to backend</li>
+                      <li>Xampp server setup</li>
+                      <li>HTML basics</li>
+                      <li>Variables</li>
+                      <li>If conditions</li>
+                      <li>Loop</li>
+                      <li>Array</li>
+                      <li>String</li>
+                      <li>Link PHP with HTML</li>
+                      <li>HTTP Requests</li>
+                      <li>PHP project</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -464,7 +495,7 @@
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    Principles of Management
+                    2- Database LV1
                   </button>
                 </h2>
                 <div
@@ -473,15 +504,21 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <ul>
+                      <li>Mysql introduction</li>
+                      <li>Create Database</li>
+                      <li>Data Types</li>
+                      <li>Create Tables</li>
+                      <li>SELECT</li>
+                      <li>INSERT</li>
+                      <li>UPDATE</li>
+                      <li>DELETE</li>
+                      <li>Relation</li>
+                      <li>INDEXING</li>
+                      <li>Connect with PHP</li>
+                      <li>PDO</li>
+                      <li>Database Project</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -495,7 +532,7 @@
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Marketing Strategies
+                    3- PHP OOP
                   </button>
                 </h2>
                 <div
@@ -504,15 +541,19 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <ul>
+                      <li>Class</li>
+                      <li>Object</li>
+                      <li>Interface</li>
+                      <li>Abstract Class</li>
+                      <li>Traits</li>
+                      <li>Inheritance</li>
+                      <li>Namespace</li>
+                      <li>Constructor</li>
+                      <li>Destructor</li>
+                      <li>Access modifier</li>
+                      <li>Project With OOP</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -527,7 +568,7 @@
                     aria-expanded="false"
                     aria-controls="collapse5"
                   >
-                    Financial Accounting
+                    4- Laravel v1
                   </button>
                 </h2>
                 <div
@@ -536,15 +577,19 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <ul>
+                      <li>Introduction to Laravel</li>
+                      <li>MVC Design pattern</li>
+                      <li>Request life cycle</li>
+                      <li>Routes</li>
+                      <li>Controllers</li>
+                      <li>Views</li>
+                      <li>File system</li>
+                      <li>Database connection</li>
+                      <li>ORM</li>
+                      <li>Auth</li>
+                      <li>Sessions</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -559,7 +604,7 @@
                     aria-expanded="false"
                     aria-controls="collapse4"
                   >
-                    Organizational Behavior
+                    5- Laravel v2 & Datebase v2
                   </button>
                 </h2>
                 <div
@@ -568,15 +613,21 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <ul>
+                      <li>Database relations</li>
+                      <li>ORM functions</li>
+                      <li>Order by</li>
+                      <li>Group by</li>
+                      <li>Joins</li>
+                      <li>Union</li>
+                      <li>Alter table</li>
+                      <li>Drop table</li>
+                      <li>Indexes and keys</li>
+                      <li>Full text search</li>
+                      <li>Triggers</li>
+                      <li>Enum</li>
+                      <li>Transactions</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -591,7 +642,7 @@
                     aria-expanded="false"
                     aria-controls="collapse6"
                   >
-                    Business Ethics and Corporate Social Responsibility
+                    6-Security and Performance
                   </button>
                 </h2>
                 <div
@@ -600,17 +651,92 @@
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                    <ul>
+                      <li>SQL injection</li>
+                      <li>CSRF</li>
+                      <li>XSS</li>
+                      <li>N+1</li>
+                      <li>CPU optimization</li>
+                      <li>RAM optimization</li>
+                      <li>Redis</li>
+                    </ul>
                   </div>
                 </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse7"
+                    aria-expanded="false"
+                    aria-controls="collapse6"
+                  >
+                    7- Security and Performance
+                  </button>
+                </h2>
+                <div
+                  id="collapse7"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>SQL injection</li>
+                      <li>CSRF</li>
+                      <li>XSS</li>
+                      <li>N+1</li>
+                      <li>CPU optimization</li>
+                      <li>RAM optimization</li>
+                      <li>Redis</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse8"
+                    aria-expanded="false"
+                    aria-controls="collapse6"
+                  >
+                    8- Server & AWS Services
+                  </button>
+                </h2>
+                <div
+                  id="collapse8"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Server</li>
+                      <li>IAM</li>
+                      <li>S3</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapse9"
+                    aria-expanded="false"
+                    aria-controls="collapse6"
+                  >
+                    9-Graduated Project
+                  </button>
+                </h2>
               </div>
             </div>
           </div>
@@ -738,7 +864,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-4 col-lg-3">
+          <!-- <div class="col-md-4 col-lg-3">
             <h6 class="column_title">Top 4 Category</h6>
             <div class="d-flex flex-column">
               <a href="courses.html"> Development </a>
@@ -746,7 +872,7 @@
               <a href="courses.html"> Design </a>
               <a href="courses.html"> Business </a>
             </div>
-          </div>
+          </div> -->
           <div class="col-md-4 col-lg-3">
             <h6 class="column_title">Quick Links</h6>
             <div class="d-flex flex-column">
@@ -801,7 +927,7 @@
             </div>
           </div>
         </div>
-        <div class="contact_info_container">
+        <!-- <div class="contact_info_container">
           <div class="d-flex gap_16 flex-wrap">
             <div>
               <img
@@ -843,7 +969,7 @@
               <li><a class="dropdown-item" href="#">Arabic</a></li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <hr />
         <p class="copy_wright">
           &copy; 2024 - Bug Solvers. Designed by Mohamed MonGe. All rights

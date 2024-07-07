@@ -132,7 +132,17 @@
               <a class="nav-link" href="contact.html">Contact us</a>
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 lang_dropdown_navbar">
+          <a
+            class="nav-link lang_dropdown_navbar"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+          >
+            <img src="./assets/images/navbar/uk.png" alt="lang_icon.svg" />
+            EN
+          </a>
+
+          <!-- <ul class="navbar-nav ms-auto mb-2 mb-lg-0 lang_dropdown_navbar">
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -166,7 +176,7 @@
                 </li>
               </ul>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </nav>
@@ -210,28 +220,20 @@
               aria-label="Search"
             />
           </form>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img
-                  src="./assets/images/navbar/lang_icon.svg"
-                  alt="lang_icon.svg"
-                />
-                English
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">English</a></li>
-                <li><a class="dropdown-item" href="#">Arabic</a></li>
-              </ul>
-            </li>
-          </ul>
+          <a
+            class="nav-link lang_dropdown_navbar"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+          >
+            <img
+              width="20"
+              height="20"
+              src="./assets/images/navbar/uk.png"
+              alt="lang_icon.svg"
+            />
+            EN
+          </a>
         </nav>
       </div>
     </div>
@@ -239,27 +241,32 @@
 
     <main>
       <section class="home_page_hero_sec">
-        <div
-          class="hero_container"
-          style="background-image: url('./assets/images/home/hero_bg.png')"
-        >
+        <div class="hero_container">
+          <!-- <img class="img_hero" src="./assets/images/home/hero_bg.png" alt="hero_bg.png" /> -->
+          <!-- <img class="img_hero show_when_1024" src="./assets/images/home/bg_img_1024.png" alt="bg_img_1024.png" /> -->
+          <img
+            class="img_hero show_when_768"
+            src="./assets/images/home/bg_hero_img_768.png"
+            alt="bg_img_1024.png"
+          />
+          <!-- <img class="img_hero show_when_mobile" src="./assets/images/home/hero_bg_img_mobile.png" alt="hero_bg_img_mobile.png" /> -->
           <div class="hero_sec_container">
             <h5 class="hero_welcome">Welcome To Bug Solvers</h5>
             <h1 class="hero_title">From beginner to professionl</h1>
             <p class="hero_subtitle">
-              Start learning the fields of the future with the professionals,
-              and here is your path to professionalism
+              Start learning programming fields with industry leaders; here is
+              your path to professionalism.
             </p>
             <div class="btns_container">
               <a class="btn_get_started" href="courses.html">Get Started</a>
-              <button class="btn_watch_video">
+              <!-- <button class="btn_watch_video">
                 Watch Video
                 <img
                   class="play_icon"
                   src="./assets/images/home/play_icon.svg"
                   alt="play_icon.svg"
                 />
-              </button>
+              </button> -->
             </div>
           </div>
         </div>
@@ -280,24 +287,21 @@
             <div class="col-lg-6">
               <h6 class="title">Who are Bug Solvers</h6>
               <h2 class="heading">
-                Our Team with High Technical Skills Help You Learn a
+                At Bug Solvers, we are more than just
                 <span class="color_primary_profession">
-                  New Profession
-                  <img
+                  course providers
+                  <!-- <img
                     class="line_under_word"
                     src="./assets/images/home/line.svg"
                     alt="line.svg"
-                  />
+                  /> -->
                 </span>
               </h2>
 
               <p class="subtitle">
-                Our team of expert instructors combines exceptional technical
-                skills with a passion for teaching to help you master a new
-                profession. With hands-on learning and personalized support, our
-                courses provide the practical experience and knowledge needed to
-                excel, whether you're advancing your career or starting a new
-                path.
+                we are your partner in your journey toward becoming a
+                professional in the field of programming. Join us and acquire
+                the skills you need to be part of the future of technology.
               </p>
             </div>
             <div class="col-lg-6">
@@ -312,8 +316,9 @@
                       <h5 class="card_title">For Beginners Students</h5>
                     </div>
                     <p class="card_subtitle">
-                      Adipiscing bibendum est ultricies integer. Magnis dis
-                      parturient montes nascetur ridiculus mus mauris
+                      We offer comprehensive courses for beginners specifically
+                      designed to help you understand the basics and build
+                      strong programming skills.
                     </p>
                   </div>
                 </div>
@@ -330,8 +335,8 @@
                       </h5>
                     </div>
                     <p class="card_subtitle">
-                      Adipiscing bibendum est ultricies integer. Magnis dis
-                      parturient montes nascetur ridiculus mus mauris
+                      Certification: Earn a recognized certificate upon course
+                      completion.
                     </p>
                   </div>
                 </div>
@@ -345,13 +350,12 @@
                       <h5 class="card_title">Expert Instruction</h5>
                     </div>
                     <p class="card_subtitle">
-                      Lectus magna fringilla urna porttitor rhoncus dolor purus
-                      non. Orci dapibus ultrices in iaculis
+                      Learn from professionals with years of practice.
                     </p>
                   </div>
                 </div>
 
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                   <div class="card_container">
                     <div class="icon_container">
                       <img
@@ -367,7 +371,7 @@
                       Interdum velit laoreet id donec ultrices tincidunt arcu
                     </p>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -377,15 +381,14 @@
         <div class="container">
           <h6 class="sec_title">How It Works</h6>
           <h3 class="sec_heading">
-            Easy Steps for Beginners to Kickstart Your
-            <span class="new_career">New Career</span>
+            Easy Steps to Kickstart Your
+            <span class="new_career">Programming Journey</span>
           </h3>
           <p class="sec_subtitle">
-            Our beginner-friendly guide simplifies the enrollment process,
-            making it easy for you to start your learning journey. From
-            registration to hands-on training, we provide clear instructions and
-            supportive visuals to ensure you gain the practical skills and
-            confidence needed to excel in your new profession.
+            At Bug Solvers, we simplify the steps to start your programming
+            career through straightforward steps and clear instructions that
+            help you gain the practical skills and confidence needed to excel in
+            your new career.
           </p>
           <div class="row">
             <div class="col-lg-3">
@@ -429,8 +432,9 @@
                 </div>
                 <h6 class="card_title">Practical Skills</h6>
                 <p class="card_subtitle">
-                  Adipiscing bibendum est ultricies integer. Magnis dis
-                  parturient montes nascetur ridiculus mus mauris
+                  We will develop your practical programming skills through
+                  hands-on exercises and real-world projects, boosting your
+                  confidence and preparing you for the job market.
                 </p>
               </div>
             </div>
@@ -475,8 +479,9 @@
                 </div>
                 <h6 class="card_title">Work with a Mentor</h6>
                 <p class="card_subtitle">
-                  Adipiscing bibendum est ultricies integer. Magnis dis
-                  parturient montes nascetur ridiculus mus mauris
+                  We offer you the opportunity to benefit from the expertise of
+                  specialized mentors who will guide you through practical
+                  training sessions and real- world projects.
                 </p>
               </div>
             </div>
@@ -522,12 +527,12 @@
                 </div>
                 <h6 class="card_title">Theoreti Knowledge</h6>
                 <p class="card_subtitle">
-                  Adipiscing bibendum est ultricies integer. Magnis dis
-                  parturient montes nascetur ridiculus mus mauris
+                  We encourage ongoing skill improvement through continuous
+                  study and staying updated with technological advancements.
                 </p>
               </div>
             </div>
-            <div class="col-lg-3">
+            <!-- <div class="col-lg-3">
               <div class="card_container">
                 <div class="card_num">
                   <svg
@@ -572,7 +577,7 @@
                   parturient montes nascetur ridiculus mus mauris
                 </p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -585,12 +590,13 @@
                 <span class="experienced">Experience</span> and Credentials
               </h3>
               <p class="sec_subtitle">
-                Get to know our team of skilled instructors, each bringing a
-                wealth of knowledge and real-world experience to the classroom.
-                Discover their backgrounds, credentials, and what makes them
-                uniquely qualified to guide you on your learning journey.
+                At Bug Solvers, our engineers have extensive experience in
+                software development. With a deep passion for technology and
+                education, they have dedicated their careers to developing
+                advanced software solutions and empowering others through
+                technical courses in backend development.
               </p>
-              <div class="slider_container">
+              <!-- <div class="slider_container">
                 <div class="mb_20">
                   <img src="./assets/images/home/Quotes.svg" alt="Quotes.svg" />
                 </div>
@@ -702,7 +708,7 @@
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
             <div class="col-md-6">
               <div class="gallery">
@@ -762,7 +768,7 @@
                       <span class="course_category">Back -End</span>
                     </div>
                     <h5 class="course_name">
-                      Introduction to User Experience Design
+                      Master Backend Development: Unlock Advanced Coding Skills
                     </h5>
                     <div class="course_details">
                       <div class="course_info">
@@ -778,7 +784,7 @@
                             src="./assets/images/home/time-icon.svg"
                             alt="time-icon.svg"
                           />
-                          <span>12 Hours</span>
+                          <span>160 Hours</span>
                         </div>
 
                         <div>
@@ -807,306 +813,7 @@
                   </div>
                 </div>
               </div>
-              <div class="item">
-                <div class="course_container">
-                  <div class="course_img_container">
-                    <img
-                      class="course_img"
-                      src="./assets/images/home/course_img.png"
-                      alt="course_img.png"
-                    />
-                  </div>
-
-                  <div class="course_inner_padding">
-                    <div class="">
-                      <span class="course_category">Back -End</span>
-                    </div>
-                    <h5 class="course_name">
-                      Introduction to User Experience Design
-                    </h5>
-                    <div class="course_details">
-                      <div class="course_info">
-                        <div>
-                          <img
-                            src="./assets/images/home/stack-line.svg"
-                            alt="stack-line.svg"
-                          />
-                          <span>Beginner</span>
-                        </div>
-                        <div>
-                          <img
-                            src="./assets/images/home/time-icon.svg"
-                            alt="time-icon.svg"
-                          />
-                          <span>12 Hours</span>
-                        </div>
-
-                        <div>
-                          <img
-                            src="./assets/images/home/star.svg"
-                            alt="star.svg"
-                          />
-                          <span>4.5 (3k reviews)</span>
-                        </div>
-                      </div>
-
-                      <div class="course_btns_container">
-                        <a class="btn_view_course" href="course_details.html">
-                          View Course
-                          <img
-                            src="./assets/images/home/arrow_right.svg"
-                            alt="arrow_right.svg"
-                          />
-                        </a>
-                        <div>
-                          <span class="price_now">$ 100.000</span>
-                          <span class="price_before">$ 450.000</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="course_container">
-                  <div class="course_img_container">
-                    <img
-                      class="course_img"
-                      src="./assets/images/home/course_img.png"
-                      alt="course_img.png"
-                    />
-                  </div>
-
-                  <div class="course_inner_padding">
-                    <div class="">
-                      <span class="course_category">Back -End</span>
-                    </div>
-                    <h5 class="course_name">
-                      Introduction to User Experience Design
-                    </h5>
-                    <div class="course_details">
-                      <div class="course_info">
-                        <div>
-                          <img
-                            src="./assets/images/home/stack-line.svg"
-                            alt="stack-line.svg"
-                          />
-                          <span>Beginner</span>
-                        </div>
-                        <div>
-                          <img
-                            src="./assets/images/home/time-icon.svg"
-                            alt="time-icon.svg"
-                          />
-                          <span>12 Hours</span>
-                        </div>
-
-                        <div>
-                          <img
-                            src="./assets/images/home/star.svg"
-                            alt="star.svg"
-                          />
-                          <span>4.5 (3k reviews)</span>
-                        </div>
-                      </div>
-
-                      <div class="course_btns_container">
-                        <a class="btn_view_course" href="course_details.html">
-                          View Course
-                          <img
-                            src="./assets/images/home/arrow_right.svg"
-                            alt="arrow_right.svg"
-                          />
-                        </a>
-                        <div>
-                          <span class="price_now">$ 100.000</span>
-                          <span class="price_before">$ 450.000</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="course_container">
-                  <div class="course_img_container">
-                    <img
-                      class="course_img"
-                      src="./assets/images/home/course_img.png"
-                      alt="course_img.png"
-                    />
-                  </div>
-
-                  <div class="course_inner_padding">
-                    <div class="">
-                      <span class="course_category">Back -End</span>
-                    </div>
-                    <h5 class="course_name">
-                      Introduction to User Experience Design
-                    </h5>
-                    <div class="course_details">
-                      <div class="course_info">
-                        <div>
-                          <img
-                            src="./assets/images/home/stack-line.svg"
-                            alt="stack-line.svg"
-                          />
-                          <span>Beginner</span>
-                        </div>
-                        <div>
-                          <img
-                            src="./assets/images/home/time-icon.svg"
-                            alt="time-icon.svg"
-                          />
-                          <span>12 Hours</span>
-                        </div>
-
-                        <div>
-                          <img
-                            src="./assets/images/home/star.svg"
-                            alt="star.svg"
-                          />
-                          <span>4.5 (3k reviews)</span>
-                        </div>
-                      </div>
-
-                      <div class="course_btns_container">
-                        <a class="btn_view_course" href="course_details.html">
-                          View Course
-                          <img
-                            src="./assets/images/home/arrow_right.svg"
-                            alt="arrow_right.svg"
-                          />
-                        </a>
-                        <div>
-                          <span class="price_now">$ 100.000</span>
-                          <span class="price_before">$ 450.000</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="course_container">
-                  <div class="course_img_container">
-                    <img
-                      class="course_img"
-                      src="./assets/images/home/course_img.png"
-                      alt="course_img.png"
-                    />
-                  </div>
-
-                  <div class="course_inner_padding">
-                    <div class="">
-                      <span class="course_category">Back -End</span>
-                    </div>
-                    <h5 class="course_name">
-                      Introduction to User Experience Design
-                    </h5>
-                    <div class="course_details">
-                      <div class="course_info">
-                        <div>
-                          <img
-                            src="./assets/images/home/stack-line.svg"
-                            alt="stack-line.svg"
-                          />
-                          <span>Beginner</span>
-                        </div>
-                        <div>
-                          <img
-                            src="./assets/images/home/time-icon.svg"
-                            alt="time-icon.svg"
-                          />
-                          <span>12 Hours</span>
-                        </div>
-
-                        <div>
-                          <img
-                            src="./assets/images/home/star.svg"
-                            alt="star.svg"
-                          />
-                          <span>4.5 (3k reviews)</span>
-                        </div>
-                      </div>
-
-                      <div class="course_btns_container">
-                        <a class="btn_view_course" href="course_details.html">
-                          View Course
-                          <img
-                            src="./assets/images/home/arrow_right.svg"
-                            alt="arrow_right.svg"
-                          />
-                        </a>
-                        <div>
-                          <span class="price_now">$ 100.000</span>
-                          <span class="price_before">$ 450.000</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="course_container">
-                  <div class="course_img_container">
-                    <img
-                      class="course_img"
-                      src="./assets/images/home/course_img.png"
-                      alt="course_img.png"
-                    />
-                  </div>
-
-                  <div class="course_inner_padding">
-                    <div class="">
-                      <span class="course_category">Back -End</span>
-                    </div>
-                    <h5 class="course_name">
-                      Introduction to User Experience Design
-                    </h5>
-                    <div class="course_details">
-                      <div class="course_info">
-                        <div>
-                          <img
-                            src="./assets/images/home/stack-line.svg"
-                            alt="stack-line.svg"
-                          />
-                          <span>Beginner</span>
-                        </div>
-                        <div>
-                          <img
-                            src="./assets/images/home/time-icon.svg"
-                            alt="time-icon.svg"
-                          />
-                          <span>12 Hours</span>
-                        </div>
-
-                        <div>
-                          <img
-                            src="./assets/images/home/star.svg"
-                            alt="star.svg"
-                          />
-                          <span>4.5 (3k reviews)</span>
-                        </div>
-                      </div>
-
-                      <div class="course_btns_container">
-                        <a class="btn_view_course" href="course_details.html">
-                          View Course
-                          <img
-                            src="./assets/images/home/arrow_right.svg"
-                            alt="arrow_right.svg"
-                          />
-                        </a>
-                        <div>
-                          <span class="price_now">$ 100.000</span>
-                          <span class="price_before">$ 450.000</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+       
             </div>
           </div>
 
@@ -1192,7 +899,7 @@
               </a>
             </div>
           </div>
-          <div class="col-md-4 col-lg-3">
+          <!-- <div class="col-md-4 col-lg-3">
             <h6 class="column_title">Top 4 Category</h6>
             <div class="d-flex flex-column">
               <a href="courses.html"> Development </a>
@@ -1200,7 +907,7 @@
               <a href="courses.html"> Design </a>
               <a href="courses.html"> Business </a>
             </div>
-          </div>
+          </div> -->
           <div class="col-md-4 col-lg-3">
             <h6 class="column_title">Quick Links</h6>
             <div class="d-flex flex-column">
@@ -1255,7 +962,7 @@
             </div>
           </div>
         </div>
-        <div class="contact_info_container">
+        <!-- <div class="contact_info_container">
           <div class="d-flex gap_16 flex-wrap">
             <div>
               <img
@@ -1297,7 +1004,7 @@
               <li><a class="dropdown-item" href="#">Arabic</a></li>
             </ul>
           </div>
-        </div>
+        </div> -->
         <hr />
         <p class="copy_wright">
           &copy; 2024 - Bug Solvers. Designed by Mohamed MonGe. All rights

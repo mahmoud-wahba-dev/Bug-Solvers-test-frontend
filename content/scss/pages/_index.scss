@@ -3,10 +3,11 @@
 
   height: 452px;
   margin-bottom: 205px;
-  @include responsive(max, 425px) {
-    height: auto;
+  @include responsive(max, 1024px) {
+    height: 340px;
   }
   .hero_container {
+    // width: 100%;
     height: 100%;
     border-radius: 38px;
     // background-image: url("/assets/images/home/hero_bg.png");
@@ -14,14 +15,25 @@
     background-size: cover;
     margin-right: 40px;
     margin-left: 40px;
+    // border: 3px solid red;
     @include responsive(max, 425px) {
       margin: 0;
       padding-bottom: 2rem;
     }
+
+    .img_hero {
+      // border: 4px solid blue;
+      width: 100%;
+      height: 100%;
+      @include responsive(max, 1024px) {
+        height: 340px;
+      }
+    }
   }
   .hero_sec_container {
     padding-left: 48px;
-
+    position: absolute;
+    top: 24%;
     .hero_welcome {
       font-size: 16px;
       font-weight: 700;
@@ -29,6 +41,18 @@
       color: $color_white;
       padding-top: 65px;
       margin-bottom: 16px;
+      @include responsive(max, 1024px) {
+        margin-bottom: 12px;
+        font-size: 12.05px;
+        font-weight: 700;
+        line-height: 18.07px;
+      }
+      @include responsive(max, 768px) {
+        font-size: 9.04px;
+        font-weight: 700;
+        line-height: 13.55px;
+        margin-bottom: 9px;
+      }
     }
     .hero_title {
       font-size: 48px;
@@ -37,8 +61,18 @@
       color: $color_white;
       max-width: 376px;
       margin-bottom: 24px;
+      @include responsive(max, 1024px) {
+        font-size: 36.14px;
+        font-weight: 700;
+        line-height: 50.6px;
+        margin-bottom: 18px;
+      }
       @include responsive(max, 768px) {
-        max-width: initial;
+        max-width: 212.33px;
+        font-size: 27.11px;
+        font-weight: 700;
+        line-height: 37.95px;
+        margin-bottom: 13px;
       }
     }
     .hero_subtitle {
@@ -48,8 +82,20 @@
       color: $color_white;
       margin-bottom: 32px;
       max-width: 442px;
+      @include responsive(max, 1024px) {
+        font-size: 12.05px;
+        font-weight: 400;
+        line-height: 18.07px;
+        margin-bottom: 24px;
+        max-width: 332.8px;
+      }
       @include responsive(max, 768px) {
-        max-width: initial;
+        font-size: 9.04px;
+        font-weight: 400;
+        line-height: 13.55px;
+        margin-bottom: 18px;
+        max-width: 249.6px;
+        margin-bottom: 18px;
       }
     }
     .btns_container {
@@ -63,6 +109,20 @@
         color: $color_white;
         margin-right: 8px;
         @include center_flex();
+        @include responsive(max, 1024px) {
+          width: 120.47px;
+          height: 42.16px;
+          padding: 11px 18.07px;
+          border-radius: 29.36px;
+          font-size: 13.55px;
+          font-weight: 500;
+          line-height: 20.33px;
+        }
+        @include responsive(max, 768px) {
+          font-size: 10.16px;
+          font-weight: 500;
+          line-height: 15.25px;
+        }
       }
 
       .btn_watch_video {
@@ -78,6 +138,22 @@
         color: #1e1e1e;
         @include center_flex();
         gap: 8px;
+        @include responsive(max, 1024px) {
+          font-size: 13.55px;
+          font-weight: 500;
+          line-height: 20.33px;
+        }
+        @include responsive(max, 768px) {
+          font-size: 10.16px;
+          font-weight: 500;
+          line-height: 15.25px;
+        }
+
+        img {
+          width: 36.14px;
+          height: 36.14px;
+          border-radius: 29.36px;
+        }
       }
     }
   }
@@ -456,7 +532,7 @@
     max-width: 481px;
     margin-bottom: 48px;
   }
- 
+
   .btn_explore_container {
     margin-top: 83px;
     text-align: center;

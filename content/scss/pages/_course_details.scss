@@ -195,21 +195,21 @@
       margin-bottom: 16px;
       max-width: 299px;
     }
-    div {
-      width: 299px;
-      height: 58.92px;
-      padding: 11.78px;
-      border-radius: 8.84px;
-      border: 0.74px solid #cccccc;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 11.7px;
-      @include responsive(max, 768px) {
-        width: 100%;
-        height: auto;
-      }
-    }
+    // div {
+    //   width: 299px;
+    //   height: 58.92px;
+    //   padding: 11.78px;
+    //   border-radius: 8.84px;
+    //   border: 0.74px solid #cccccc;
+    //   margin-bottom: 6px;
+    //   display: flex;
+    //   align-items: center;
+    //   gap: 11.7px;
+    //   @include responsive(max, 768px) {
+    //     width: 100%;
+    //     height: auto;
+    //   }
+    // }
   }
 }
 
