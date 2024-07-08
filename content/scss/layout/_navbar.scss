@@ -1,7 +1,9 @@
 .navbar {
   height: 125px;
   padding: 0;
-  
+  @include responsive(max,425px){
+    height: 100px;
+  }
   .navbar-brand {
     margin-right: 153px;
     @include responsive(max, 1400px) {
@@ -12,6 +14,11 @@
     }
     @include responsive(max, 1055px) {
       margin-right: 1%;
+    }
+    img{
+      @include responsive(max,425px){
+        width: 90px;
+      }
     }
   }
   .search_input {

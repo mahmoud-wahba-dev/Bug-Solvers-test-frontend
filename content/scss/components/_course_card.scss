@@ -1,6 +1,6 @@
 .course_container {
   // width: 405px;
-  // height: 477px;
+  height: 502px;
   border-radius: 20px;
   border: 2px solid #cecece;
 
@@ -13,6 +13,11 @@
   }
   .course_img_container {
     margin-bottom: 24px;
+    height: 190px;
+    img{
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .course_inner_padding {
     padding: 24px;
