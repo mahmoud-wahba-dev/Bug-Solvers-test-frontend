@@ -65,3 +65,13 @@ a {
 .search_form {
   position: relative;
 }
+
+.container {
+  @include responsive(max, 1440px) {
+    // max-width: 1200px !important;
+    --bs-gutter-x: 7rem;
+  }
+}
+p {
+  font-size: 14px;
+}

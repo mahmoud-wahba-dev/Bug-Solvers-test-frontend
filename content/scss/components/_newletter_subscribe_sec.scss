@@ -6,16 +6,21 @@
     margin-bottom: 108px;
   
     .title {
-      font-size: 48px;
+      font-size: 40px;
+      // font-size: 48px;
       font-weight: 700;
       line-height: 62.4px;
       letter-spacing: -0.06em;
       color: $color_white;
       margin-bottom: 32px;
+      @include responsive(max, 425px) {
+        font-size: 20px;
+
+      }
     }
     .txt_container {
       padding-left: 48px;
-      @include responsive(max, 375px) {
+      @include responsive(max, 425px) {
         width: auto;
         padding: 10px;
       }
@@ -29,7 +34,7 @@
       display: flex;
       align-items: center;
       padding: 8px;
-      @include responsive(max, 375px) {
+      @include responsive(max, 425px) {
         width: auto;
       }
   

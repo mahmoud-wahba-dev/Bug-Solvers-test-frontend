@@ -7,7 +7,9 @@
   @include responsive(max, 1400px) {
     width: auto;
   }
-
+  @include responsive(max, 768px) {
+    height: 570px;
+  }
   .course_img {
     width: 100% !important;
   }
