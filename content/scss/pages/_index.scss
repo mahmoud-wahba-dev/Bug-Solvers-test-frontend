@@ -684,7 +684,8 @@
   .owl-carousel .owl-item img {
     display: initial;
     width: initial;
-  
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
 
   .owl-item {

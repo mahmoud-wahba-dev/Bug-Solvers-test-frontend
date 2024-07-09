@@ -127,6 +127,11 @@
       position: absolute;
     }
   }
+  .robot_container {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 .course_details_desc {
@@ -149,11 +154,17 @@
     @include responsive(max, 375px) {
       height: auto;
     }
-
+    .border_left_right {
+      border-right: 1px solid $color_black_50;
+      border-left: 1px solid $color_black_50;
+      @include responsive(max, 425px) {
+        border: none;
+      }
+    }
     div {
       width: calc(100% / 4);
       height: 90%;
-      border-right: 1px solid $color_black_50;
+      // border-right: 1px solid $color_black_50;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -186,6 +197,15 @@
     margin-bottom: 145px;
   }
   .second_col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .video_container {
+      width: 100%;
+    }
+    iframe {
+      width: 100%;
+    }
     .second_title {
       font-size: 23.57px;
       font-weight: 700;

@@ -1,7 +1,7 @@
 .navbar {
   height: 125px;
   padding: 0;
-  @include responsive(max,425px){
+  @include responsive(max, 425px) {
     height: 100px;
   }
   .navbar-brand {
@@ -15,8 +15,8 @@
     @include responsive(max, 1055px) {
       margin-right: 1%;
     }
-    img{
-      @include responsive(max,425px){
+    img {
+      @include responsive(max, 425px) {
         width: 90px;
       }
     }
@@ -57,12 +57,12 @@
       display: none !important;
     }
   }
-  .container{
+  .container {
     @include responsive(max, 1199px) {
       max-width: 100%;
     }
   }
-  .navbar-collapse{
+  .navbar-collapse {
     @include responsive(max, 1014px) {
       flex-basis: 80%;
     }
@@ -73,12 +73,9 @@
   }
 
   .lang_dropdown_navbar {
-     img{
-       width: 20px;
-       height: 20px;
-     }
+    img {
+      width: 20px;
+      height: 20px;
+    }
   }
-
-
-  
 }
