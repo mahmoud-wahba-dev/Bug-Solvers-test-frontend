@@ -8,6 +8,48 @@
     color: $color_primary;
   }
 }
+.discount-wrapper {
+  font-size: 1em; // Make all text larger to match the discount text
+  font-weight: bold; // Make all text bold
+  color: #ff5733; // Use the same color for consistency
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+               0 0 10px rgba(255, 255, 255, 0.5),
+               0 0 15px rgba(255, 255, 255, 0.5),
+               0 0 20px rgba(255, 255, 255, 0.5);
+}
+.discount {
+  color: #ff5733; // Bright attractive color
+  font-size: 1.5em; // Make the text larger
+  font-weight: bold; // Make the text bold
+  animation: pulse 1s infinite; // Add a pulsing animation
+
+  // Add a glowing effect
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+    0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5),
+    0 0 20px rgba(255, 255, 255, 0.5);
+
+  // Define the pulse animation
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+        0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+      transform: scale(1.2);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.7),
+        0 0 20px rgba(255, 255, 255, 0.7), 0 0 30px rgba(255, 255, 255, 0.7),
+        0 0 40px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+      transform: scale(1);
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5),
+        0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5),
+        0 0 20px rgba(255, 255, 255, 0.5);
+    }
+  }
+}
 
 .course_details_hero_sec {
   height: 596px;
@@ -202,6 +244,7 @@
     align-items: center;
     .video_container {
       width: 100%;
+      height: 70%;
     }
     iframe {
       width: 100%;
@@ -315,22 +358,22 @@
     margin-bottom: 110px;
   }
   .title {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 700;
     line-height: 60px;
     text-align: center;
     color: #191a23;
-    margin-bottom: 16px;
-    margin-top: 64px;
+    margin-bottom: 11px;
+    margin-top: 22px;
   }
   .subtitle {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
-    line-height: 27px;
+    line-height: 22px;
     text-align: center;
     max-width: 411px;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     color: $color_black_50;
   }
 
@@ -344,11 +387,11 @@
       font-weight: 500;
       line-height: 36px;
       color: $color_black_1;
-      margin-bottom: 24px;
+      margin-bottom: 0;
       width: 100%;
     }
     .input_group {
-      margin-bottom: 46px;
+      margin-bottom: 39px;
     }
     .input_class {
       // width: 252px;
