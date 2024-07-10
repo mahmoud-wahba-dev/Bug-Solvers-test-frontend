@@ -93,7 +93,6 @@ footer {
 
     @include responsive(max, 425px) {
       position: initial;
-
     }
   }
   .dropdown-menu.show {
@@ -117,5 +116,10 @@ footer {
     color: $color_primary;
     padding-left: 9px;
     padding-right: 9px;
+  }
+  .flex_sm_wrap {
+    @include responsive(max, 768px) {
+      flex-wrap: wrap;
+    }
   }
 }

@@ -71,6 +71,11 @@ a {
     // max-width: 1200px !important;
     --bs-gutter-x: 7rem;
   }
+
+  @include responsive(max, 768px) {
+    // max-width: 1200px !important;
+    --bs-gutter-x: 0rem;
+  }
 }
 p {
   font-size: 14px;
